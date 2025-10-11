@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Isaïe BAKO - Élève Ingénieur AMOA & Transformation Digitale</title>
     <meta name="description" content="Élève Ingénieur INPT spécialisé en AMOA et Transformation Digitale. Technologies: Blockchain, IA, ERP | Secteurs: Fintech, Industrie, Public">
+    <link rel="icon" type="image/png" href="assets/img/favicon.png">
     <style>
         * {
             margin: 0;
@@ -12,147 +13,173 @@
             box-sizing: border-box;
         }
         
+        html {
+            scroll-behavior: smooth;
+        }
+        
         body {
-            font-family: 'Inter', 'Segoe UI', sans-serif;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Inter', Roboto, sans-serif;
             line-height: 1.6;
-            color: #2d3748;
-            background: #f7fafc;
+            color: #e2e8f0;
+            background: #0f172a;
         }
         
         header {
-            background: linear-gradient(135deg, #4c51bf 0%, #805ad5 100%);
+            background: linear-gradient(135deg, #1a202c 0%, #2d3748 100%);
             color: white;
-            padding: 4rem 2rem 3rem;
+            padding: 3rem 1.5rem 2.5rem;
             text-align: center;
+            border-bottom: 1px solid rgba(79, 209, 197, 0.2);
         }
         
         header h1 {
-            font-size: 2.8rem;
-            margin-bottom: 0.8rem;
-            font-weight: 700;
+            font-size: 2.5rem;
+            margin-bottom: 0.6rem;
+            font-weight: 800;
+            letter-spacing: 0.3px;
         }
         
         header .subtitle {
-            font-size: 1.5rem;
-            margin-bottom: 1.2rem;
-            opacity: 0.95;
+            font-size: 1.3rem;
+            margin-bottom: 1rem;
+            opacity: 0.9;
             font-weight: 500;
+            color: #cbd5e1;
         }
         
         .tech-tags {
             display: flex;
             justify-content: center;
-            gap: 1rem;
+            gap: 0.7rem;
             flex-wrap: wrap;
-            margin-top: 1.5rem;
+            margin-top: 1.2rem;
         }
         
         .tech-tag {
-            background: rgba(255,255,255,0.2);
-            padding: 0.5rem 1rem;
+            background: rgba(79, 209, 197, 0.12);
+            padding: 0.45rem 0.9rem;
             border-radius: 20px;
-            font-size: 0.95rem;
+            font-size: 0.9rem;
             backdrop-filter: blur(10px);
-            border: 1px solid rgba(255,255,255,0.3);
+            border: 1px solid rgba(79, 209, 197, 0.35);
+            color: #4fd1c5;
+            transition: all 0.3s;
+        }
+        
+        .tech-tag:hover {
+            background: rgba(79, 209, 197, 0.2);
+            border-color: rgba(79, 209, 197, 0.5);
         }
         
         .stage-banner {
             background: linear-gradient(90deg, #48bb78 0%, #38a169 100%);
             color: white;
-            padding: 1.2rem 2rem;
+            padding: 1rem 1.5rem;
             text-align: center;
-            font-size: 1.15rem;
+            font-size: 1.05rem;
             font-weight: 600;
             box-shadow: 0 2px 8px rgba(0,0,0,0.15);
         }
         
         nav {
-            background: white;
-            padding: 1rem;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.08);
+            background: rgba(11, 18, 32, 0.8);
+            backdrop-filter: blur(12px);
+            padding: 0.8rem;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.2);
             position: sticky;
             top: 0;
             z-index: 100;
+            border-bottom: 1px solid rgba(79, 209, 197, 0.15);
         }
         
         nav ul {
             list-style: none;
             display: flex;
             justify-content: center;
-            gap: 2rem;
+            gap: 1.5rem;
             flex-wrap: wrap;
-            max-width: 800px;
+            max-width: 700px;
             margin: 0 auto;
         }
         
         nav a {
-            color: #4c51bf;
+            color: #4fd1c5;
             text-decoration: none;
             font-weight: 600;
             transition: all 0.3s;
-            padding: 0.5rem 1rem;
+            padding: 0.6rem 1rem;
             border-radius: 6px;
+            font-size: 0.95rem;
         }
         
         nav a:hover {
-            background: #4c51bf;
-            color: white;
+            background: rgba(79, 209, 197, 0.15);
+            color: #5de4d3;
         }
         
         .container {
-            max-width: 1100px;
+            max-width: 1200px;
             margin: 0 auto;
-            padding: 2rem;
+            padding: 1.5rem;
         }
         
         section {
-            background: white;
-            margin: 2rem 0;
-            padding: 2.5rem;
+            background: rgba(17, 24, 39, 0.6);
+            backdrop-filter: blur(10px);
+            margin: 1.8rem 0;
+            padding: 2rem;
             border-radius: 12px;
-            box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+            border: 1px solid rgba(79, 209, 197, 0.15);
+            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
         }
         
         section h2 {
-            color: #4c51bf;
-            margin-bottom: 1.5rem;
-            font-size: 2rem;
-            border-bottom: 3px solid #805ad5;
+            color: #4fd1c5;
+            margin-bottom: 1.3rem;
+            font-size: 1.8rem;
+            border-bottom: 2px solid rgba(79, 209, 197, 0.4);
             padding-bottom: 0.5rem;
             display: inline-block;
         }
         
         .profile-intro {
-            font-size: 1.1rem;
+            font-size: 1.05rem;
             line-height: 1.8;
-            color: #4a5568;
-            margin-bottom: 1.5rem;
+            color: #cbd5e1;
+            margin-bottom: 1.2rem;
+        }
+        
+        .profile-intro strong {
+            color: #e2e8f0;
+            font-weight: 600;
         }
         
         .competences-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 1.5rem;
-            margin-top: 2rem;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 1.3rem;
+            margin-top: 1.5rem;
         }
         
         .competence-card {
-            background: linear-gradient(135deg, #f7fafc 0%, #edf2f7 100%);
-            padding: 1.5rem;
+            background: rgba(30, 41, 59, 0.5);
+            padding: 1.3rem;
             border-radius: 10px;
-            border-left: 4px solid #4c51bf;
-            transition: transform 0.3s, box-shadow 0.3s;
+            border-left: 3px solid #4fd1c5;
+            transition: all 0.3s;
+            border: 1px solid rgba(79, 209, 197, 0.2);
         }
         
         .competence-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 4px 20px rgba(76, 81, 191, 0.2);
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(79, 209, 197, 0.2);
+            border-color: rgba(79, 209, 197, 0.4);
         }
         
         .competence-card h3 {
-            color: #2d3748;
+            color: #e2e8f0;
             margin-bottom: 0.8rem;
-            font-size: 1.3rem;
+            font-size: 1.2rem;
         }
         
         .competence-card ul {
@@ -161,151 +188,196 @@
         }
         
         .competence-card li {
-            padding: 0.4rem 0;
-            color: #4a5568;
+            padding: 0.35rem 0;
+            color: #94a3b8;
             position: relative;
-            padding-left: 1.5rem;
+            padding-left: 1.3rem;
+            font-size: 0.95rem;
         }
         
         .competence-card li:before {
             content: "▸";
             position: absolute;
             left: 0;
-            color: #4c51bf;
+            color: #4fd1c5;
             font-weight: bold;
         }
         
         .projet-card {
-            background: #f7fafc;
-            padding: 1.8rem;
+            background: rgba(30, 41, 59, 0.4);
+            padding: 1.5rem;
             border-radius: 10px;
-            margin-bottom: 1.5rem;
-            border: 2px solid #e2e8f0;
+            margin-bottom: 1.3rem;
+            border: 1px solid rgba(79, 209, 197, 0.2);
             transition: all 0.3s;
         }
         
         .projet-card:hover {
-            border-color: #4c51bf;
-            box-shadow: 0 4px 15px rgba(76, 81, 191, 0.15);
+            border-color: rgba(79, 209, 197, 0.5);
+            box-shadow: 0 6px 20px rgba(79, 209, 197, 0.15);
+            transform: translateY(-2px);
         }
         
         .projet-card h3 {
-            color: #4c51bf;
-            margin-bottom: 0.8rem;
-            font-size: 1.4rem;
+            color: #4fd1c5;
+            margin-bottom: 0.7rem;
+            font-size: 1.3rem;
+        }
+        
+        .projet-card p {
+            color: #cbd5e1;
+            line-height: 1.7;
+            font-size: 0.98rem;
         }
         
         .projet-tags {
             display: flex;
             gap: 0.5rem;
             flex-wrap: wrap;
-            margin-top: 1rem;
+            margin-top: 0.9rem;
         }
         
         .tag {
-            background: #4c51bf;
-            color: white;
-            padding: 0.3rem 0.8rem;
+            background: rgba(79, 209, 197, 0.15);
+            color: #4fd1c5;
+            border: 1px solid rgba(79, 209, 197, 0.3);
+            padding: 0.3rem 0.75rem;
             border-radius: 15px;
-            font-size: 0.85rem;
+            font-size: 0.82rem;
             font-weight: 500;
         }
         
         .secteurs-container {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 1.5rem;
-            margin-top: 2rem;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 1.3rem;
+            margin-top: 1.5rem;
         }
         
         .secteur-card {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: linear-gradient(135deg, rgba(102, 126, 234, 0.25) 0%, rgba(118, 75, 162, 0.25) 100%);
+            border: 1px solid rgba(102, 126, 234, 0.3);
             color: white;
-            padding: 2rem 1.5rem;
+            padding: 1.8rem 1.3rem;
             border-radius: 10px;
             text-align: center;
-            transition: transform 0.3s;
+            transition: all 0.3s;
         }
         
         .secteur-card:hover {
-            transform: scale(1.05);
+            transform: translateY(-4px);
+            box-shadow: 0 8px 25px rgba(102, 126, 234, 0.3);
+            border-color: rgba(102, 126, 234, 0.5);
         }
         
         .secteur-card h3 {
-            font-size: 1.4rem;
+            font-size: 1.3rem;
             margin-bottom: 0.5rem;
+            color: #e2e8f0;
         }
         
         .secteur-card p {
-            font-size: 0.95rem;
+            font-size: 0.92rem;
             opacity: 0.9;
+            color: #cbd5e1;
         }
         
         .contact-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 1.5rem;
-            margin-top: 2rem;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 1.3rem;
+            margin-top: 1.5rem;
         }
         
         .contact-item {
-            background: #f7fafc;
-            padding: 1.5rem;
+            background: rgba(30, 41, 59, 0.4);
+            padding: 1.3rem;
             border-radius: 10px;
             text-align: center;
-            border: 2px solid #e2e8f0;
+            border: 1px solid rgba(79, 209, 197, 0.2);
             transition: all 0.3s;
         }
         
         .contact-item:hover {
-            border-color: #4c51bf;
-            background: white;
+            border-color: rgba(79, 209, 197, 0.5);
+            background: rgba(30, 41, 59, 0.6);
+            transform: translateY(-2px);
+        }
+        
+        .contact-item p {
+            color: #94a3b8;
+            margin-bottom: 0.5rem;
+            font-size: 0.9rem;
         }
         
         .contact-item a {
-            color: #4c51bf;
+            color: #4fd1c5;
             text-decoration: none;
             font-weight: 600;
-            font-size: 1.1rem;
+            font-size: 1.05rem;
+            transition: color 0.3s;
+        }
+        
+        .contact-item a:hover {
+            color: #5de4d3;
         }
         
         .download-cv {
             display: inline-block;
             background: linear-gradient(135deg, #48bb78 0%, #38a169 100%);
             color: white;
-            padding: 1rem 2.5rem;
+            padding: 0.9rem 2rem;
             border-radius: 8px;
             text-decoration: none;
             font-weight: 600;
-            font-size: 1.1rem;
-            margin-top: 2rem;
-            transition: transform 0.3s, box-shadow 0.3s;
+            font-size: 1.05rem;
+            margin-top: 1.5rem;
+            transition: all 0.3s;
             box-shadow: 0 4px 15px rgba(72, 187, 120, 0.3);
         }
         
         .download-cv:hover {
-            transform: translateY(-3px);
+            transform: translateY(-2px);
             box-shadow: 0 6px 20px rgba(72, 187, 120, 0.4);
+            filter: brightness(1.05);
         }
         
         footer {
-            background: #2d3748;
-            color: white;
+            background: rgba(17, 24, 39, 0.8);
+            color: #94a3b8;
             text-align: center;
-            padding: 2rem;
-            margin-top: 3rem;
+            padding: 1.8rem 1rem;
+            margin-top: 2.5rem;
+            border-top: 1px solid rgba(79, 209, 197, 0.2);
+        }
+        
+        footer p {
+            margin: 0.3rem 0;
         }
         
         @media (max-width: 768px) {
             header h1 {
-                font-size: 2rem;
+                font-size: 1.9rem;
             }
             
             header .subtitle {
-                font-size: 1.2rem;
+                font-size: 1.1rem;
             }
             
-            .competences-grid, .contact-grid {
+            .tech-tag {
+                font-size: 0.85rem;
+                padding: 0.4rem 0.75rem;
+            }
+            
+            section {
+                padding: 1.5rem;
+            }
+            
+            section h2 {
+                font-size: 1.5rem;
+            }
+            
+            .competences-grid, .contact-grid, .secteurs-container {
                 grid-template-columns: 1fr;
             }
         }
@@ -319,11 +391,12 @@
             <span class="tech-tag">🔗 Blockchain</span>
             <span class="tech-tag">🤖 Intelligence Artificielle</span>
             <span class="tech-tag">💼 ERP & Gestion</span>
+            <span class="tech-tag">📊 Business Intelligence</span>
         </div>
         <div class="tech-tags">
+            <span class="tech-tag">🔄 Transformation Digitale</span>
             <span class="tech-tag">💰 Fintech</span>
             <span class="tech-tag">🏭 Industrie</span>
-            <span class="tech-tag">🏛️ Secteur Public</span>
         </div>
     </header>
     
@@ -349,17 +422,18 @@
                 je me spécialise en <strong>AMOA (Assistance à Maîtrise d'Ouvrage)</strong> et <strong>Innovation Digitale</strong>.
             </p>
             <p class="profile-intro">
-                Passionné par les technologies émergentes, je m'intéresse particulièrement à la <strong>blockchain</strong>, 
-                à l'<strong>intelligence artificielle</strong> et aux <strong>systèmes de gestion d'entreprise (ERP)</strong>. 
-                Mon objectif est d'accompagner les organisations dans leur transformation digitale en apportant une vision 
-                à la fois technique et métier.
+                Mon parcours couvre la <strong>transformation digitale</strong>, la <strong>gestion de projets de développement logiciel</strong>, 
+                la <strong>qualité et les tests</strong>, l'<strong>intelligence artificielle</strong>, la <strong>blockchain</strong>, 
+                les <strong>systèmes d'information</strong>, le <strong>Business Intelligence</strong> et le <strong>management stratégique</strong>.
             </p>
             <p class="profile-intro">
-                Originaire du <strong>Burkina Faso</strong> 🇧🇫, je suis motivé par l'innovation au service du développement, 
-                particulièrement dans les secteurs de la <strong>fintech</strong>, de l'<strong>industrie</strong> et du 
-                <strong>service public</strong>.
+                Curieux des technologies émergentes et de leurs applications concrètes, particulièrement dans les contextes 
+                <strong>africains et internationaux</strong>.
             </p>
-            <a href="#" class="download-cv">📄 Télécharger mon CV</a>
+            <p class="profile-intro">
+                🌍 <strong>Francophone</strong> | 🇧🇫 <strong>Burkinabè</strong> | 🇲🇦 <strong>Basé à Rabat</strong>
+            </p>
+            <a href="assets/cv/Isaie_BAKO_CV.pdf" class="download-cv" download>📄 Télécharger mon CV</a>
         </section>
         
         <section id="competences">
@@ -377,12 +451,15 @@
                 </div>
                 
                 <div class="competence-card">
-                    <h3>💼 AMOA & Gestion de Projet</h3>
+                    <h3>💼 AMOA & Management de Projet</h3>
                     <ul>
                         <li>Analyse des besoins métier</li>
                         <li>Rédaction cahiers des charges</li>
                         <li>Gestion de backlog produit</li>
                         <li>Méthodologies Agile/Scrum</li>
+                        <li>Business Intelligence & Analytics</li>
+                        <li>Management stratégique et contrôle de gestion</li>
+                        <li>Marketing digital et opérationnel</li>
                         <li>Accompagnement au changement</li>
                     </ul>
                 </div>
@@ -456,7 +533,7 @@
                 </div>
             </div>
             
-            <p style="margin-top: 2rem; color: #4a5568; font-style: italic;">
+            <p style="margin-top: 1.5rem; color: #94a3b8; font-style: italic;">
                 💡 D'autres projets en cours de développement, notamment dans la DeFi et les solutions d'épargne digitale.
             </p>
         </section>
@@ -496,12 +573,12 @@
                 
                 <div class="contact-item">
                     <p>💼 LinkedIn</p>
-                    <a href="https://linkedin.com/in/votre-profil" target="_blank">linkedin.com/in/isaie-bako</a>
+                    <a href="https://linkedin.com/in/votre-profil" target="_blank" rel="noopener">linkedin.com/in/isaie-bako</a>
                 </div>
                 
                 <div class="contact-item">
-                    <p>🐙 GitHub</p>
-                    <a href="https://github.com/bako-isaie" target="_blank">github.com/bako-isaie</a>
+                    <p>💻 GitHub</p>
+                    <a href="https://github.com/bako-isaie" target="_blank" rel="noopener">github.com/bako-isaie</a>
                 </div>
                 
                 <div class="contact-item">
@@ -510,15 +587,15 @@
                 </div>
             </div>
             
-            <div style="text-align: center; margin-top: 2.5rem;">
-                <a href="#" class="download-cv">📄 Télécharger mon CV complet</a>
+            <div style="text-align: center; margin-top: 2rem;">
+                <a href="assets/cv/Isaie_BAKO_CV.pdf" class="download-cv" download>📄 Télécharger mon CV complet</a>
             </div>
         </section>
     </div>
     
     <footer>
         <p>&copy; 2025 Isaïe BAKO - Élève Ingénieur INPT Rabat</p>
-        <p style="margin-top: 0.5rem; opacity: 0.8;">Burkina Faso 🇧🇫 • Maroc 🇲🇦 • Ouvert aux opportunités internationales 🌍</p>
+        <p style="margin-top: 0.5rem;">Burkina Faso 🇧🇫 • Maroc 🇲🇦 • Ouvert aux opportunités internationales 🌍</p>
     </footer>
 </body>
 </html>
