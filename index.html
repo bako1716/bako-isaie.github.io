@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Isaïe BAKO - Élève Ingénieur AMOA & Transformation Digitale</title>
+    <meta name="description" content="Élève Ingénieur INPT spécialisé en AMOA et Transformation Digitale. Technologies: Blockchain, IA, ERP | Secteurs: Fintech, Industrie, Public">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Inter', 'Segoe UI', sans-serif;
+            line-height: 1.6;
+            color: #2d3748;
+            background: #f7fafc;
+        }
+        
+        header {
+            background: linear-gradient(135deg, #4c51bf 0%, #805ad5 100%);
+            color: white;
+            padding: 4rem 2rem 3rem;
+            text-align: center;
+        }
+        
+        header h1 {
+            font-size: 2.8rem;
+            margin-bottom: 0.8rem;
+            font-weight: 700;
+        }
+        
+        header .subtitle {
+            font-size: 1.5rem;
+            margin-bottom: 1.2rem;
+            opacity: 0.95;
+            font-weight: 500;
+        }
+        
+        .tech-tags {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            flex-wrap: wrap;
+            margin-top: 1.5rem;
+        }
+        
+        .tech-tag {
+            background: rgba(255,255,255,0.2);
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-size: 0.95rem;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255,255,255,0.3);
+        }
+        
+        .stage-banner {
+            background: linear-gradient(90deg, #48bb78 0%, #38a169 100%);
+            color: white;
+            padding: 1.2rem 2rem;
+            text-align: center;
+            font-size: 1.15rem;
+            font-weight: 600;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+        }
+        
+        nav {
+            background: white;
+            padding: 1rem;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.08);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            flex-wrap: wrap;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        nav a {
+            color: #4c51bf;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s;
+            padding: 0.5rem 1rem;
+            border-radius: 6px;
+        }
+        
+        nav a:hover {
+            background: #4c51bf;
+            color: white;
+        }
+        
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        
+        section {
+            background: white;
+            margin: 2rem 0;
+            padding: 2.5rem;
+            border-radius: 12px;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+        }
+        
+        section h2 {
+            color: #4c51bf;
+            margin-bottom: 1.5rem;
+            font-size: 2rem;
+            border-bottom: 3px solid #805ad5;
+            padding-bottom: 0.5rem;
+            display: inline-block;
+        }
+        
+        .profile-intro {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: #4a5568;
+            margin-bottom: 1.5rem;
+        }
+        
+        .competences-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+        
+        .competence-card {
+            background: linear-gradient(135deg, #f7fafc 0%, #edf2f7 100%);
+            padding: 1.5rem;
+            border-radius: 10px;
+            border-left: 4px solid #4c51bf;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        
+        .competence-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 20px rgba(76, 81, 191, 0.2);
+        }
+        
+        .competence-card h3 {
+            color: #2d3748;
+            margin-bottom: 0.8rem;
+            font-size: 1.3rem;
+        }
+        
+        .competence-card ul {
+            list-style: none;
+            padding-left: 0;
+        }
+        
+        .competence-card li {
+            padding: 0.4rem 0;
+            color: #4a5568;
+            position: relative;
+            padding-left: 1.5rem;
+        }
+        
+        .competence-card li:before {
+            content: "▸";
+            position: absolute;
+            left: 0;
+            color: #4c51bf;
+            font-weight: bold;
+        }
+        
+        .projet-card {
+            background: #f7fafc;
+            padding: 1.8rem;
+            border-radius: 10px;
+            margin-bottom: 1.5rem;
+            border: 2px solid #e2e8f0;
+            transition: all 0.3s;
+        }
+        
+        .projet-card:hover {
+            border-color: #4c51bf;
+            box-shadow: 0 4px 15px rgba(76, 81, 191, 0.15);
+        }
+        
+        .projet-card h3 {
+            color: #4c51bf;
+            margin-bottom: 0.8rem;
+            font-size: 1.4rem;
+        }
+        
+        .projet-tags {
+            display: flex;
+            gap: 0.5rem;
+            flex-wrap: wrap;
+            margin-top: 1rem;
+        }
+        
+        .tag {
+            background: #4c51bf;
+            color: white;
+            padding: 0.3rem 0.8rem;
+            border-radius: 15px;
+            font-size: 0.85rem;
+            font-weight: 500;
+        }
+        
+        .secteurs-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+        
+        .secteur-card {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 2rem 1.5rem;
+            border-radius: 10px;
+            text-align: center;
+            transition: transform 0.3s;
+        }
+        
+        .secteur-card:hover {
+            transform: scale(1.05);
+        }
+        
+        .secteur-card h3 {
+            font-size: 1.4rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        .secteur-card p {
+            font-size: 0.95rem;
+            opacity: 0.9;
+        }
+        
+        .contact-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+        
+        .contact-item {
+            background: #f7fafc;
+            padding: 1.5rem;
+            border-radius: 10px;
+            text-align: center;
+            border: 2px solid #e2e8f0;
+            transition: all 0.3s;
+        }
+        
+        .contact-item:hover {
+            border-color: #4c51bf;
+            background: white;
+        }
+        
+        .contact-item a {
+            color: #4c51bf;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.1rem;
+        }
+        
+        .download-cv {
+            display: inline-block;
+            background: linear-gradient(135deg, #48bb78 0%, #38a169 100%);
+            color: white;
+            padding: 1rem 2.5rem;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.1rem;
+            margin-top: 2rem;
+            transition: transform 0.3s, box-shadow 0.3s;
+            box-shadow: 0 4px 15px rgba(72, 187, 120, 0.3);
+        }
+        
+        .download-cv:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(72, 187, 120, 0.4);
+        }
+        
+        footer {
+            background: #2d3748;
+            color: white;
+            text-align: center;
+            padding: 2rem;
+            margin-top: 3rem;
+        }
+        
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2rem;
+            }
+            
+            header .subtitle {
+                font-size: 1.2rem;
+            }
+            
+            .competences-grid, .contact-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Isaïe BAKO</h1>
+        <p class="subtitle">Élève Ingénieur AMOA & Transformation Digitale</p>
+        <div class="tech-tags">
+            <span class="tech-tag">🔗 Blockchain</span>
+            <span class="tech-tag">🤖 Intelligence Artificielle</span>
+            <span class="tech-tag">💼 ERP & Gestion</span>
+        </div>
+        <div class="tech-tags">
+            <span class="tech-tag">💰 Fintech</span>
+            <span class="tech-tag">🏭 Industrie</span>
+            <span class="tech-tag">🏛️ Secteur Public</span>
+        </div>
+    </header>
+    
+    <div class="stage-banner">
+        🎯 Actuellement en recherche de stage | Disponible dès 2025/2026
+    </div>
+    
+    <nav>
+        <ul>
+            <li><a href="#profil">Profil</a></li>
+            <li><a href="#competences">Compétences</a></li>
+            <li><a href="#projets">Projets</a></li>
+            <li><a href="#secteurs">Secteurs</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    
+    <div class="container">
+        <section id="profil">
+            <h2>À Propos</h2>
+            <p class="profile-intro">
+                Élève ingénieur à l'<strong>Institut National des Postes et Télécommunications (INPT) de Rabat</strong>, 
+                je me spécialise en <strong>AMOA (Assistance à Maîtrise d'Ouvrage)</strong> et <strong>Innovation Digitale</strong>.
+            </p>
+            <p class="profile-intro">
+                Passionné par les technologies émergentes, je m'intéresse particulièrement à la <strong>blockchain</strong>, 
+                à l'<strong>intelligence artificielle</strong> et aux <strong>systèmes de gestion d'entreprise (ERP)</strong>. 
+                Mon objectif est d'accompagner les organisations dans leur transformation digitale en apportant une vision 
+                à la fois technique et métier.
+            </p>
+            <p class="profile-intro">
+                Originaire du <strong>Burkina Faso</strong> 🇧🇫, je suis motivé par l'innovation au service du développement, 
+                particulièrement dans les secteurs de la <strong>fintech</strong>, de l'<strong>industrie</strong> et du 
+                <strong>service public</strong>.
+            </p>
+            <a href="#" class="download-cv">📄 Télécharger mon CV</a>
+        </section>
+        
+        <section id="competences">
+            <h2>Compétences Techniques</h2>
+            <div class="competences-grid">
+                <div class="competence-card">
+                    <h3>🔗 Blockchain & Web3</h3>
+                    <ul>
+                        <li>Développement smart contracts (Solidity)</li>
+                        <li>Hedera Hashgraph</li>
+                        <li>Ethereum & testnets</li>
+                        <li>Gestion de tokens (ERC-20, HTS)</li>
+                        <li>Applications décentralisées (dApps)</li>
+                    </ul>
+                </div>
+                
+                <div class="competence-card">
+                    <h3>💼 AMOA & Gestion de Projet</h3>
+                    <ul>
+                        <li>Analyse des besoins métier</li>
+                        <li>Rédaction cahiers des charges</li>
+                        <li>Gestion de backlog produit</li>
+                        <li>Méthodologies Agile/Scrum</li>
+                        <li>Accompagnement au changement</li>
+                    </ul>
+                </div>
+                
+                <div class="competence-card">
+                    <h3>🤖 IA & Data</h3>
+                    <ul>
+                        <li>Machine Learning (bases)</li>
+                        <li>Chatbots intelligents</li>
+                        <li>Analyse de données</li>
+                        <li>Python pour l'IA</li>
+                        <li>Automatisation de processus</li>
+                    </ul>
+                </div>
+                
+                <div class="competence-card">
+                    <h3>🛠️ Outils & Technologies</h3>
+                    <ul>
+                        <li>ERP : Odoo, SAP (notions)</li>
+                        <li>Développement : Python, JavaScript</li>
+                        <li>Git/GitHub pour versionning</li>
+                        <li>Metamask, wallets Web3</li>
+                        <li>Documentation technique</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        
+        <section id="projets">
+            <h2>Projets Réalisés</h2>
+            
+            <div class="projet-card">
+                <h3>🤖 Hedera Chatbot - Gestion de Tokens</h3>
+                <p>
+                    Développement d'un chatbot intelligent pour la création et la gestion de tokens sur la blockchain Hedera. 
+                    Permet aux utilisateurs de créer des tokens personnalisés via une interface conversationnelle simple.
+                </p>
+                <div class="projet-tags">
+                    <span class="tag">Hedera</span>
+                    <span class="tag">Smart Contracts</span>
+                    <span class="tag">Chatbot</span>
+                    <span class="tag">IA</span>
+                </div>
+            </div>
+            
+            <div class="projet-card">
+                <h3>💼 Odoo Salaire Maroc</h3>
+                <p>
+                    Module de gestion de paie adapté au contexte marocain pour l'ERP Odoo. Automatisation du calcul des salaires, 
+                    cotisations sociales et édition des bulletins de paie conformes à la législation locale.
+                </p>
+                <div class="projet-tags">
+                    <span class="tag">ERP Odoo</span>
+                    <span class="tag">Python</span>
+                    <span class="tag">RH</span>
+                    <span class="tag">Gestion</span>
+                </div>
+            </div>
+            
+            <div class="projet-card">
+                <h3>🚗 MonPermis - Plateforme d'Apprentissage</h3>
+                <p>
+                    Application web pour l'apprentissage du code de la route. Interface intuitive avec tests blancs, 
+                    suivi de progression et statistiques de performance pour les candidats au permis de conduire.
+                </p>
+                <div class="projet-tags">
+                    <span class="tag">Web App</span>
+                    <span class="tag">JavaScript</span>
+                    <span class="tag">Education</span>
+                    <span class="tag">UI/UX</span>
+                </div>
+            </div>
+            
+            <p style="margin-top: 2rem; color: #4a5568; font-style: italic;">
+                💡 D'autres projets en cours de développement, notamment dans la DeFi et les solutions d'épargne digitale.
+            </p>
+        </section>
+        
+        <section id="secteurs">
+            <h2>Secteurs d'Intérêt pour Stage</h2>
+            <div class="secteurs-container">
+                <div class="secteur-card">
+                    <h3>💰 Fintech</h3>
+                    <p>Paiements digitaux, blockchain financière, inclusion financière</p>
+                </div>
+                
+                <div class="secteur-card">
+                    <h3>🏭 Industrie 4.0</h3>
+                    <p>Digitalisation, ERP, optimisation de processus</p>
+                </div>
+                
+                <div class="secteur-card">
+                    <h3>🏛️ Secteur Public</h3>
+                    <p>E-gouvernement, services citoyens, transformation digitale</p>
+                </div>
+                
+                <div class="secteur-card">
+                    <h3>🚀 Innovation</h3>
+                    <p>Startups, incubateurs, projets R&D, technologies émergentes</p>
+                </div>
+            </div>
+        </section>
+        
+        <section id="contact">
+            <h2>Me Contacter</h2>
+            <div class="contact-grid">
+                <div class="contact-item">
+                    <p>📧 Email</p>
+                    <a href="mailto:votre.email@exemple.com">votre.email@exemple.com</a>
+                </div>
+                
+                <div class="contact-item">
+                    <p>💼 LinkedIn</p>
+                    <a href="https://linkedin.com/in/votre-profil" target="_blank">linkedin.com/in/isaie-bako</a>
+                </div>
+                
+                <div class="contact-item">
+                    <p>🐙 GitHub</p>
+                    <a href="https://github.com/bako-isaie" target="_blank">github.com/bako-isaie</a>
+                </div>
+                
+                <div class="contact-item">
+                    <p>📱 Téléphone</p>
+                    <a href="tel:+212XXXXXXXXX">+212 XXX XXX XXX</a>
+                </div>
+            </div>
+            
+            <div style="text-align: center; margin-top: 2.5rem;">
+                <a href="#" class="download-cv">📄 Télécharger mon CV complet</a>
+            </div>
+        </section>
+    </div>
+    
+    <footer>
+        <p>&copy; 2025 Isaïe BAKO - Élève Ingénieur INPT Rabat</p>
+        <p style="margin-top: 0.5rem; opacity: 0.8;">Burkina Faso 🇧🇫 • Maroc 🇲🇦 • Ouvert aux opportunités internationales 🌍</p>
+    </footer>
+</body>
+</html>
