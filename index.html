@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Isaïe BAKO - Élève Ingénieur AMOA & Transformation Digitale</title>
-    <meta name="description" content="Élève Ingénieur INPT spécialisé en AMOA et Transformation Digitale. Technologies: Blockchain, IA, ERP | Secteurs: Fintech, Industrie, Public">
+    <title>Isaïe BAKO - Élève Ingénieur en Innovation & AMOA | INPT Rabat</title>
+    <meta name="description" content="Élève Ingénieur INPT (3e année) spécialisé en AMOA et Innovation Digitale. Stage PFE 4 mois dès Janvier 2025 | Blockchain • IA • Transformation Digitale">
     <link rel="icon" type="image/png" href="assets/img/favicon.png">
     <style>
         * {
@@ -27,21 +27,21 @@
         header {
             background: linear-gradient(135deg, #1a202c 0%, #2d3748 100%);
             color: white;
-            padding: 3rem 1.5rem 2.5rem;
+            padding: 2.5rem 1.5rem 2rem;
             text-align: center;
             border-bottom: 1px solid rgba(79, 209, 197, 0.2);
         }
         
         header h1 {
             font-size: 2.5rem;
-            margin-bottom: 0.6rem;
+            margin-bottom: 0.5rem;
             font-weight: 800;
             letter-spacing: 0.3px;
         }
         
         header .subtitle {
-            font-size: 1.3rem;
-            margin-bottom: 1rem;
+            font-size: 1.2rem;
+            margin-bottom: 0.8rem;
             opacity: 0.9;
             font-weight: 500;
             color: #cbd5e1;
@@ -50,16 +50,16 @@
         .tech-tags {
             display: flex;
             justify-content: center;
-            gap: 0.7rem;
+            gap: 0.6rem;
             flex-wrap: wrap;
-            margin-top: 1.2rem;
+            margin-top: 1rem;
         }
         
         .tech-tag {
             background: rgba(79, 209, 197, 0.12);
-            padding: 0.45rem 0.9rem;
+            padding: 0.4rem 0.85rem;
             border-radius: 20px;
-            font-size: 0.9rem;
+            font-size: 0.88rem;
             backdrop-filter: blur(10px);
             border: 1px solid rgba(79, 209, 197, 0.35);
             color: #4fd1c5;
@@ -69,6 +69,7 @@
         .tech-tag:hover {
             background: rgba(79, 209, 197, 0.2);
             border-color: rgba(79, 209, 197, 0.5);
+            transform: translateY(-1px);
         }
         
         .stage-banner {
@@ -79,12 +80,18 @@
             font-size: 1.05rem;
             font-weight: 600;
             box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+            animation: pulse 2s ease-in-out infinite;
+        }
+        
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.95; }
         }
         
         nav {
             background: rgba(11, 18, 32, 0.8);
             backdrop-filter: blur(12px);
-            padding: 0.8rem;
+            padding: 0.7rem;
             box-shadow: 0 2px 10px rgba(0,0,0,0.2);
             position: sticky;
             top: 0;
@@ -107,9 +114,9 @@
             text-decoration: none;
             font-weight: 600;
             transition: all 0.3s;
-            padding: 0.6rem 1rem;
+            padding: 0.5rem 0.9rem;
             border-radius: 6px;
-            font-size: 0.95rem;
+            font-size: 0.93rem;
         }
         
         nav a:hover {
@@ -126,8 +133,8 @@
         section {
             background: rgba(17, 24, 39, 0.6);
             backdrop-filter: blur(10px);
-            margin: 1.8rem 0;
-            padding: 2rem;
+            margin: 1.5rem 0;
+            padding: 1.8rem;
             border-radius: 12px;
             border: 1px solid rgba(79, 209, 197, 0.15);
             box-shadow: 0 4px 15px rgba(0,0,0,0.3);
@@ -135,18 +142,18 @@
         
         section h2 {
             color: #4fd1c5;
-            margin-bottom: 1.3rem;
-            font-size: 1.8rem;
+            margin-bottom: 1.2rem;
+            font-size: 1.75rem;
             border-bottom: 2px solid rgba(79, 209, 197, 0.4);
             padding-bottom: 0.5rem;
             display: inline-block;
         }
         
         .profile-intro {
-            font-size: 1.05rem;
+            font-size: 1.02rem;
             line-height: 1.8;
             color: #cbd5e1;
-            margin-bottom: 1.2rem;
+            margin-bottom: 0.8rem;
         }
         
         .profile-intro strong {
@@ -157,13 +164,13 @@
         .competences-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-            gap: 1.3rem;
-            margin-top: 1.5rem;
+            gap: 1.2rem;
+            margin-top: 1.3rem;
         }
         
         .competence-card {
             background: rgba(30, 41, 59, 0.5);
-            padding: 1.3rem;
+            padding: 1.2rem;
             border-radius: 10px;
             border-left: 3px solid #4fd1c5;
             transition: all 0.3s;
@@ -179,7 +186,7 @@
         .competence-card h3 {
             color: #e2e8f0;
             margin-bottom: 0.8rem;
-            font-size: 1.2rem;
+            font-size: 1.15rem;
         }
         
         .competence-card ul {
@@ -188,11 +195,11 @@
         }
         
         .competence-card li {
-            padding: 0.35rem 0;
+            padding: 0.3rem 0;
             color: #94a3b8;
             position: relative;
-            padding-left: 1.3rem;
-            font-size: 0.95rem;
+            padding-left: 1.2rem;
+            font-size: 0.93rem;
         }
         
         .competence-card li:before {
@@ -203,11 +210,47 @@
             font-weight: bold;
         }
         
+        .experience-timeline {
+            background: rgba(30, 41, 59, 0.4);
+            padding: 1.3rem;
+            border-radius: 10px;
+            border: 1px solid rgba(79, 209, 197, 0.2);
+            margin-top: 1rem;
+        }
+        
+        .experience-timeline p {
+            color: #cbd5e1;
+            line-height: 1.7;
+            margin-bottom: 0.7rem;
+            font-size: 0.97rem;
+        }
+        
+        .experience-timeline strong {
+            color: #e2e8f0;
+        }
+        
+        .certifications {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.6rem;
+            margin-top: 0.8rem;
+        }
+        
+        .cert-badge {
+            background: rgba(79, 209, 197, 0.15);
+            color: #4fd1c5;
+            border: 1px solid rgba(79, 209, 197, 0.3);
+            padding: 0.35rem 0.8rem;
+            border-radius: 15px;
+            font-size: 0.85rem;
+            font-weight: 500;
+        }
+        
         .projet-card {
             background: rgba(30, 41, 59, 0.4);
-            padding: 1.5rem;
+            padding: 1.4rem;
             border-radius: 10px;
-            margin-bottom: 1.3rem;
+            margin-bottom: 1.2rem;
             border: 1px solid rgba(79, 209, 197, 0.2);
             transition: all 0.3s;
         }
@@ -220,78 +263,43 @@
         
         .projet-card h3 {
             color: #4fd1c5;
-            margin-bottom: 0.7rem;
-            font-size: 1.3rem;
+            margin-bottom: 0.6rem;
+            font-size: 1.25rem;
         }
         
         .projet-card p {
             color: #cbd5e1;
             line-height: 1.7;
-            font-size: 0.98rem;
+            font-size: 0.96rem;
         }
         
         .projet-tags {
             display: flex;
             gap: 0.5rem;
             flex-wrap: wrap;
-            margin-top: 0.9rem;
+            margin-top: 0.8rem;
         }
         
         .tag {
             background: rgba(79, 209, 197, 0.15);
             color: #4fd1c5;
             border: 1px solid rgba(79, 209, 197, 0.3);
-            padding: 0.3rem 0.75rem;
+            padding: 0.3rem 0.7rem;
             border-radius: 15px;
-            font-size: 0.82rem;
+            font-size: 0.8rem;
             font-weight: 500;
-        }
-        
-        .secteurs-container {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-            gap: 1.3rem;
-            margin-top: 1.5rem;
-        }
-        
-        .secteur-card {
-            background: linear-gradient(135deg, rgba(102, 126, 234, 0.25) 0%, rgba(118, 75, 162, 0.25) 100%);
-            border: 1px solid rgba(102, 126, 234, 0.3);
-            color: white;
-            padding: 1.8rem 1.3rem;
-            border-radius: 10px;
-            text-align: center;
-            transition: all 0.3s;
-        }
-        
-        .secteur-card:hover {
-            transform: translateY(-4px);
-            box-shadow: 0 8px 25px rgba(102, 126, 234, 0.3);
-            border-color: rgba(102, 126, 234, 0.5);
-        }
-        
-        .secteur-card h3 {
-            font-size: 1.3rem;
-            margin-bottom: 0.5rem;
-            color: #e2e8f0;
-        }
-        
-        .secteur-card p {
-            font-size: 0.92rem;
-            opacity: 0.9;
-            color: #cbd5e1;
         }
         
         .contact-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-            gap: 1.3rem;
-            margin-top: 1.5rem;
+            gap: 1.2rem;
+            margin-top: 1.3rem;
         }
         
         .contact-item {
             background: rgba(30, 41, 59, 0.4);
-            padding: 1.3rem;
+            padding: 1.2rem;
             border-radius: 10px;
             text-align: center;
             border: 1px solid rgba(79, 209, 197, 0.2);
@@ -306,16 +314,17 @@
         
         .contact-item p {
             color: #94a3b8;
-            margin-bottom: 0.5rem;
-            font-size: 0.9rem;
+            margin-bottom: 0.4rem;
+            font-size: 0.88rem;
         }
         
         .contact-item a {
             color: #4fd1c5;
             text-decoration: none;
             font-weight: 600;
-            font-size: 1.05rem;
+            font-size: 1rem;
             transition: color 0.3s;
+            word-break: break-word;
         }
         
         .contact-item a:hover {
@@ -326,12 +335,12 @@
             display: inline-block;
             background: linear-gradient(135deg, #48bb78 0%, #38a169 100%);
             color: white;
-            padding: 0.9rem 2rem;
+            padding: 0.85rem 1.8rem;
             border-radius: 8px;
             text-decoration: none;
             font-weight: 600;
-            font-size: 1.05rem;
-            margin-top: 1.5rem;
+            font-size: 1.02rem;
+            margin-top: 1.3rem;
             transition: all 0.3s;
             box-shadow: 0 4px 15px rgba(72, 187, 120, 0.3);
         }
@@ -346,13 +355,14 @@
             background: rgba(17, 24, 39, 0.8);
             color: #94a3b8;
             text-align: center;
-            padding: 1.8rem 1rem;
-            margin-top: 2.5rem;
+            padding: 1.5rem 1rem;
+            margin-top: 2rem;
             border-top: 1px solid rgba(79, 209, 197, 0.2);
         }
         
         footer p {
             margin: 0.3rem 0;
+            font-size: 0.93rem;
         }
         
         @media (max-width: 768px) {
@@ -361,24 +371,28 @@
             }
             
             header .subtitle {
-                font-size: 1.1rem;
+                font-size: 1.05rem;
             }
             
             .tech-tag {
-                font-size: 0.85rem;
-                padding: 0.4rem 0.75rem;
+                font-size: 0.83rem;
+                padding: 0.35rem 0.7rem;
             }
             
             section {
-                padding: 1.5rem;
+                padding: 1.3rem;
             }
             
             section h2 {
-                font-size: 1.5rem;
+                font-size: 1.45rem;
             }
             
-            .competences-grid, .contact-grid, .secteurs-container {
+            .competences-grid, .contact-grid {
                 grid-template-columns: 1fr;
+            }
+            
+            .stage-banner {
+                font-size: 0.95rem;
             }
         }
     </style>
@@ -386,22 +400,21 @@
 <body>
     <header>
         <h1>Isaïe BAKO</h1>
-        <p class="subtitle">Élève Ingénieur AMOA & Transformation Digitale</p>
+        <p class="subtitle">Élève Ingénieur en Innovation & AMOA | 3e année INPT</p>
         <div class="tech-tags">
-            <span class="tech-tag">🔗 Blockchain</span>
-            <span class="tech-tag">🤖 Intelligence Artificielle</span>
-            <span class="tech-tag">💼 ERP & Gestion</span>
-            <span class="tech-tag">📊 Business Intelligence</span>
+            <span class="tech-tag">🎯 AMOA & Pilotage</span>
+            <span class="tech-tag">🔄 Transformation Digitale</span>
+            <span class="tech-tag">🌐 Web3</span>
         </div>
         <div class="tech-tags">
-            <span class="tech-tag">🔄 Transformation Digitale</span>
+            <span class="tech-tag">🤖 IA & Data</span>
             <span class="tech-tag">💰 Fintech</span>
-            <span class="tech-tag">🏭 Industrie</span>
+            <span class="tech-tag">🚀 Innovation</span>
         </div>
     </header>
     
     <div class="stage-banner">
-        🎯 Actuellement en recherche de stage | Disponible dès 2025/2026
+        🎯Recherche Stage PFE (4 mois) | Disponible Janvier 2025 | AMOA • Transformation Digitale • Innovation
     </div>
     
     <nav>
@@ -409,7 +422,6 @@
             <li><a href="#profil">Profil</a></li>
             <li><a href="#competences">Compétences</a></li>
             <li><a href="#projets">Projets</a></li>
-            <li><a href="#secteurs">Secteurs</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
@@ -418,72 +430,85 @@
         <section id="profil">
             <h2>À Propos</h2>
             <p class="profile-intro">
-                Élève ingénieur à l'<strong>Institut National des Postes et Télécommunications (INPT) de Rabat</strong>, 
-                je me spécialise en <strong>AMOA (Assistance à Maîtrise d'Ouvrage)</strong> et <strong>Innovation Digitale</strong>.
+                Élève ingénieur à l'<strong>Institut National des Postes et Télécommunications (INPT - Rabat)</strong> 
+                en 3e année, spécialisé en <strong>AMOA (Assistance à Maîtrise d'Ouvrage)</strong> et 
+                <strong>Innovation Digitale</strong>.
             </p>
             <p class="profile-intro">
-                Mon parcours couvre la <strong>transformation digitale</strong>, la <strong>gestion de projets de développement logiciel</strong>, 
-                la <strong>qualité et les tests</strong>, l'<strong>intelligence artificielle</strong>, la <strong>blockchain</strong>, 
-                les <strong>systèmes d'information</strong>, le <strong>Business Intelligence</strong> et le <strong>management stratégique</strong>.
+                Passionné par les technologies émergentes et leur application concrète dans la 
+                transformation des organisations.
             </p>
             <p class="profile-intro">
-                Curieux des technologies émergentes et de leurs applications concrètes, particulièrement dans les contextes 
-                <strong>africains et internationaux</strong>.
-            </p>
-            <p class="profile-intro">
-                🌍 <strong>Francophone</strong> | 🇧🇫 <strong>Burkinabè</strong> | 🇲🇦 <strong>Basé à Rabat</strong>
+                Recherche stage PFE (4 mois) dès janvier 2025 pour apprendre et contribuer à des 
+                projets de transformation digitale, d'analyse fonctionnelle ou d'innovation technologique.
             </p>
             <a href="assets/cv/Isaie_BAKO_CV.pdf" class="download-cv" download>📄 Télécharger mon CV</a>
         </section>
         
         <section id="competences">
-            <h2>Compétences Techniques</h2>
+            <h2>Compétences Clés</h2>
             <div class="competences-grid">
                 <div class="competence-card">
-                    <h3>🔗 Blockchain & Web3</h3>
+                    <h3>🎯 AMOA & PILOTAGE DE PROJETS</h3>
                     <ul>
-                        <li>Développement smart contracts (Solidity)</li>
-                        <li>Hedera Hashgraph</li>
-                        <li>Ethereum & testnets</li>
-                        <li>Gestion de tokens (ERC-20, HTS)</li>
-                        <li>Applications décentralisées (dApps)</li>
+                        <li>Cadrage fonctionnel & besoins</li>
+                        <li>Gestion backlog & méthodes Agile</li>
+                        <li>Business Intelligence (Power BI)</li>
+                        <li>Optimisation processus métiers</li>
+                        <li>Documentation & cahiers charges</li>
                     </ul>
                 </div>
                 
                 <div class="competence-card">
-                    <h3>💼 AMOA & Management de Projet</h3>
+                    <h3>🚀 TRANSFORMATION DIGITALE</h3>
                     <ul>
-                        <li>Analyse des besoins métier</li>
-                        <li>Rédaction cahiers des charges</li>
-                        <li>Gestion de backlog produit</li>
-                        <li>Méthodologies Agile/Scrum</li>
-                        <li>Business Intelligence & Analytics</li>
-                        <li>Management stratégique et contrôle de gestion</li>
-                        <li>Marketing digital et opérationnel</li>
-                        <li>Accompagnement au changement</li>
+                        <li>Stratégie & urbanisation SI</li>
+                        <li>Conduite du changement</li>
+                        <li>Communication digitale</li>
+                        <li>Innovation & modernisation</li>
+                        <li>Digitalisation processus métiers</li>
+                        <li>Accompagnement utilisateurs</li>
                     </ul>
                 </div>
                 
                 <div class="competence-card">
-                    <h3>🤖 IA & Data</h3>
+                    <h3>🔗 BLOCKCHAIN & WEB3</h3>
                     <ul>
-                        <li>Machine Learning (bases)</li>
-                        <li>Chatbots intelligents</li>
-                        <li>Analyse de données</li>
-                        <li>Python pour l'IA</li>
-                        <li>Automatisation de processus</li>
+                        <li>DApps & Smart Contracts (Solidity)</li>
+                        <li>Tokenomics (Hedera, Ethereum)</li>
+                        <li>Solutions de paiement digital</li>
+                        <li>Web3 & Fintech</li>
                     </ul>
                 </div>
                 
                 <div class="competence-card">
-                    <h3>🛠️ Outils & Technologies</h3>
+                    <h3>💼 ERP & SYSTÈMES D'INFORMATION</h3>
                     <ul>
-                        <li>ERP : Odoo, SAP (notions)</li>
-                        <li>Développement : Python, JavaScript</li>
-                        <li>Git/GitHub pour versionning</li>
-                        <li>Metamask, wallets Web3</li>
-                        <li>Documentation technique</li>
+                        <li>SAP S/4HANA (MM, SD, FI/CO, BI)</li>
+                        <li>Odoo (développement modules)</li>
+                        <li>Gouvernance & Architecture SI</li>
+                        <li>Administration systèmes</li>
+                        <li>Intégration solutions entreprise</li>
                     </ul>
+                </div>
+            </div>
+        </section>
+        
+        <section>
+            <h2>💼 Parcours & Certifications</h2>
+            <div class="experience-timeline">
+                <p>
+                    <strong>Chef de Service Communication Digitale</strong> - Assemblée Législative de Transition (ALT), Burkina Faso (2023-2024)
+                </p>
+                <p>
+                    <strong>Administrateur Système</strong> - Assemblée Nationale du Burkina Faso (2017-2023)
+                </p>
+                <p style="margin-top: 1rem;"><strong>🎓 Certifications & Formations :</strong></p>
+                <div class="certifications">
+                    <span class="cert-badge">SAP S/4HANA (formation)</span>
+                    <span class="cert-badge">ITIL 4 Foundation</span>
+                    <span class="cert-badge">Hashgraph Developer</span>
+                    <span class="cert-badge">PySpark</span>
                 </div>
             </div>
         </section>
@@ -494,71 +519,42 @@
             <div class="projet-card">
                 <h3>🤖 Hedera Chatbot - Gestion de Tokens</h3>
                 <p>
-                    Développement d'un chatbot intelligent pour la création et la gestion de tokens sur la blockchain Hedera. 
-                    Permet aux utilisateurs de créer des tokens personnalisés via une interface conversationnelle simple.
+                    Chatbot intelligent pour la création et gestion de tokens sur blockchain Hedera. 
+                    Interface conversationnelle pour tokens personnalisés.
                 </p>
                 <div class="projet-tags">
                     <span class="tag">Hedera</span>
                     <span class="tag">Smart Contracts</span>
-                    <span class="tag">Chatbot</span>
-                    <span class="tag">IA</span>
+                    <span class="tag">Chatbot IA</span>
+                    <span class="tag">Tokenomics</span>
                 </div>
             </div>
             
             <div class="projet-card">
                 <h3>💼 Odoo Salaire Maroc</h3>
                 <p>
-                    Module de gestion de paie adapté au contexte marocain pour l'ERP Odoo. Automatisation du calcul des salaires, 
-                    cotisations sociales et édition des bulletins de paie conformes à la législation locale.
+                    Module de gestion de paie adapté au contexte marocain pour l'ERP Odoo. 
+                    Automatisation calcul salaires, cotisations et bulletins conformes.
                 </p>
                 <div class="projet-tags">
                     <span class="tag">ERP Odoo</span>
                     <span class="tag">Python</span>
                     <span class="tag">RH</span>
-                    <span class="tag">Gestion</span>
+                    <span class="tag">Automatisation</span>
                 </div>
             </div>
             
             <div class="projet-card">
                 <h3>🚗 MonPermis - Plateforme d'Apprentissage</h3>
                 <p>
-                    Application web pour l'apprentissage du code de la route. Interface intuitive avec tests blancs, 
-                    suivi de progression et statistiques de performance pour les candidats au permis de conduire.
+                    Application web pour l'apprentissage du code de la route. Tests blancs, 
+                    suivi de progression et statistiques de performance.
                 </p>
                 <div class="projet-tags">
                     <span class="tag">Web App</span>
                     <span class="tag">JavaScript</span>
                     <span class="tag">Education</span>
                     <span class="tag">UI/UX</span>
-                </div>
-            </div>
-            
-            <p style="margin-top: 1.5rem; color: #94a3b8; font-style: italic;">
-                💡 D'autres projets en cours de développement, notamment dans la DeFi et les solutions d'épargne digitale.
-            </p>
-        </section>
-        
-        <section id="secteurs">
-            <h2>Secteurs d'Intérêt pour Stage</h2>
-            <div class="secteurs-container">
-                <div class="secteur-card">
-                    <h3>💰 Fintech</h3>
-                    <p>Paiements digitaux, blockchain financière, inclusion financière</p>
-                </div>
-                
-                <div class="secteur-card">
-                    <h3>🏭 Industrie 4.0</h3>
-                    <p>Digitalisation, ERP, optimisation de processus</p>
-                </div>
-                
-                <div class="secteur-card">
-                    <h3>🏛️ Secteur Public</h3>
-                    <p>E-gouvernement, services citoyens, transformation digitale</p>
-                </div>
-                
-                <div class="secteur-card">
-                    <h3>🚀 Innovation</h3>
-                    <p>Startups, incubateurs, projets R&D, technologies émergentes</p>
                 </div>
             </div>
         </section>
@@ -568,26 +564,28 @@
             <div class="contact-grid">
                 <div class="contact-item">
                     <p>📧 Email</p>
-                    <a href="mailto:votre.email@exemple.com">votre.email@exemple.com</a>
-                </div>
-                
-                <div class="contact-item">
-                    <p>💼 LinkedIn</p>
-                    <a href="https://linkedin.com/in/votre-profil" target="_blank" rel="noopener">linkedin.com/in/isaie-bako</a>
-                </div>
-                
-                <div class="contact-item">
-                    <p>💻 GitHub</p>
-                    <a href="https://github.com/bako-isaie" target="_blank" rel="noopener">github.com/bako-isaie</a>
+                    <a href="mailto:bako.isaie@gmail.com">bako.isaie@gmail.com</a>
                 </div>
                 
                 <div class="contact-item">
                     <p>📱 Téléphone</p>
-                    <a href="tel:+212XXXXXXXXX">+212 XXX XXX XXX</a>
+                    <a href="tel:+212689710949">+212 689 710 949</a>
+                    <br>
+                    <a href="tel:+22670058715" style="font-size: 0.9rem; margin-top: 0.3rem; display: inline-block;">+226 70 05 87 15</a>
+                </div>
+                
+                <div class="contact-item">
+                    <p>💼 LinkedIn</p>
+                    <a href="https://linkedin.com/in/bako-isaie" target="_blank" rel="noopener">linkedin.com/in/bako-isaie</a>
+                </div>
+                
+                <div class="contact-item">
+                    <p>💻 GitHub</p>
+                    <a href="https://github.com/bako1716" target="_blank" rel="noopener">github.com/bako1716</a>
                 </div>
             </div>
             
-            <div style="text-align: center; margin-top: 2rem;">
+            <div style="text-align: center; margin-top: 1.8rem;">
                 <a href="assets/cv/Isaie_BAKO_CV.pdf" class="download-cv" download>📄 Télécharger mon CV complet</a>
             </div>
         </section>
