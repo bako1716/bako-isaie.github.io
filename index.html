@@ -28,8 +28,41 @@
             background: linear-gradient(135deg, #1a202c 0%, #2d3748 100%);
             color: white;
             padding: 2.5rem 1.5rem 2rem;
-            text-align: center;
             border-bottom: 1px solid rgba(79, 209, 197, 0.2);
+        }
+        
+        .header-content {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .profile-photo {
+            flex-shrink: 0;
+        }
+        
+        .profile-photo img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid rgba(79, 209, 197, 0.25);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            transition: all 0.3s ease;
+        }
+        
+        .profile-photo img:hover {
+            transform: scale(1.03);
+            border-color: rgba(79, 209, 197, 0.35);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+        }
+        
+        .header-text {
+            flex: 1;
+            text-align: center;
         }
         
         header h1 {
@@ -366,6 +399,16 @@
         }
         
         @media (max-width: 768px) {
+            .header-content {
+                flex-direction: column;
+                gap: 1.5rem;
+            }
+            
+            .profile-photo img {
+                width: 120px;
+                height: 120px;
+            }
+            
             header h1 {
                 font-size: 1.9rem;
             }
@@ -399,17 +442,24 @@
 </head>
 <body>
     <header>
-        <h1>Isaïe BAKO</h1>
-        <p class="subtitle">Élève Ingénieur en Innovation & AMOA | 3e année INPT</p>
-        <div class="tech-tags">
-            <span class="tech-tag">🎯 AMOA & Pilotage</span>
-            <span class="tech-tag">🔄 Transformation Digitale</span>
-            <span class="tech-tag">🌐 Web3</span>
-        </div>
-        <div class="tech-tags">
-            <span class="tech-tag">🤖 IA & Data</span>
-            <span class="tech-tag">💰 Fintech</span>
-            <span class="tech-tag">🚀 Innovation</span>
+        <div class="header-content">
+            <div class="profile-photo">
+                <img src="assets/img/profile.jpg" alt="Isaïe BAKO">
+            </div>
+            <div class="header-text">
+                <h1>Isaïe BAKO</h1>
+                <p class="subtitle">Élève Ingénieur en Innovation & AMOA | 3e année INPT</p>
+                <div class="tech-tags">
+                    <span class="tech-tag">🎯 AMOA & Pilotage</span>
+                    <span class="tech-tag">🔄 Transformation Digitale</span>
+                    <span class="tech-tag">🌐 Web3</span>
+                </div>
+                <div class="tech-tags">
+                    <span class="tech-tag">🤖 IA & Data</span>
+                    <span class="tech-tag">💰 Fintech</span>
+                    <span class="tech-tag">🚀 Innovation</span>
+                </div>
+            </div>
         </div>
     </header>
     
@@ -567,13 +617,13 @@
                     <a href="mailto:bako.isaie@gmail.com">bako.isaie@gmail.com</a>
                 </div>
                 
-				<div class="contact-item">
-					<p>📱 Téléphone</p>
-					<a href="tel:+212689710949">📞 +212 689 710 949 (Appel)</a>
-					<br>
-					<a href="https://wa.me/22670058715" style="font-size: 0.9rem; margin-top: 0.3rem; display: inline-block;">💬 +226 70 05 87 15 (WhatsApp)</a>
-				</div>
-								
+                <div class="contact-item">
+                    <p>📱 Téléphone</p>
+                    <a href="tel:+212689710949">📞 +212 689 710 949 (Appel)</a>
+                    <br>
+                    <a href="https://wa.me/22670058715" style="font-size: 0.9rem; margin-top: 0.3rem; display: inline-block;">💬 +226 70 05 87 15 (WhatsApp)</a>
+                </div>
+                
                 <div class="contact-item">
                     <p>💼 LinkedIn</p>
                     <a href="https://linkedin.com/in/bako-isaie" target="_blank" rel="noopener">linkedin.com/in/bako-isaie</a>
